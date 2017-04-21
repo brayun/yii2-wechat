@@ -65,6 +65,10 @@ class WechatUser extends Component
      */
     public $token;
     /**
+     * @var string
+     */
+    public $unionid;
+    /**
      * @return string
      */
     public function getOpenId()
