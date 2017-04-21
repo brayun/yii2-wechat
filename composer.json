@@ -1,0 +1,21 @@
+{
+    "name": "oueng/yii2-wechat",
+    "description": "wechat sdk for yii2",
+    "require": {
+        "yiisoft/yii2": "~2.0",
+        "overtrue/wechat": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ethan",
+            "email": "ethan.lu@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "oueng\\wechat\\": "src"
+        }
+    }
+}
