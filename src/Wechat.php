@@ -44,6 +44,8 @@ use Overtrue\Socialite\User;
 class Wechat extends Component
 {
 
+    public $wechatOptions = [];
+
     public $sessionParam = '_wechatUser';
 
     public $returnUrlParam = '_wechatReturnUrl';
@@ -163,8 +165,8 @@ class Wechat extends Component
      */
     public function getApp()
     {
-        if(! self::$_app instanceof Application){
-            self::$_app = new Application(Yii::$app->params['WECHAT']);
+        if (! self::$_app instanceof Application) {
+            self::$_app = new Application( $this->wechatOptions ?  : Yii::$app->params['WECHAT']);
         }
         return self::$_app;
     }
