@@ -60,17 +60,14 @@ class Wechat extends Component
      * 用户授权请求
      * @return Response
      */
-    public function authorizeRequired($url = null)
+    public function authorizeRequired()
     {
         if(Yii::$app->request->get('code')) {
             // callback and authorize
             return $this->authorize($this->app->oauth->user());
         }else{
             // redirect to wechat authorize page
-            if (empty($url)) {
-                $url = Yii::$app->request->getUrl();
-            }
-            $this->setReturnUrl($url);
+            $this->setReturnUrl(Yii::$app->request->getUrl());
             return Yii::$app->response->redirect($this->app->oauth->redirect()->getTargetUrl());
         }
     }
