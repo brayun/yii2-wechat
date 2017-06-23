@@ -67,7 +67,6 @@ class Wechat extends Component
             return $this->authorize($this->app->oauth->user());
         }else{
             // redirect to wechat authorize page
-            $this->setReturnUrl(Yii::$app->request->getUrl());
             return Yii::$app->response->redirect($this->app->oauth->redirect()->getTargetUrl());
         }
     }
