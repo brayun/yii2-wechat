@@ -78,6 +78,7 @@ class Wechat extends Component
      */
     public function authorize(User $user)
     {
+        unset($user['provider']);
         Yii::$app->session->set($this->sessionParam, $user->toJSON());
         return Yii::$app->response->redirect($this->getReturnUrl());
     }
