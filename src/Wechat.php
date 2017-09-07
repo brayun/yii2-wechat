@@ -26,7 +26,7 @@
  *
  */
 
-namespace oueng\wechat;
+namespace brayun\wechat;
 
 use Yii;
 use yii\base\Component;
