@@ -1,5 +1,5 @@
 {
-    "name": "oueng/yii2-wechat",
+    "name": "brayun/yii2-wechat",
     "description": "wechat sdk for yii2",
     "require": {
         "yiisoft/yii2": "~2.0",
@@ -9,13 +9,13 @@
     "authors": [
         {
             "name": "ethan",
-            "email": "ethan.lu@qq.com"
+            "email": "ethan@brayun.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "oueng\\wechat\\": "src"
+            "brayun\\wechat\\": "src"
         }
     }
 }
