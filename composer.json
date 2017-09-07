@@ -1,6 +1,6 @@
 {
     "name": "brayun/yii2-wechat",
-    "description": "wechat sdk for yii2",
+    "description": "wechat sdk for yii2, base easy wechat",
     "require": {
         "yiisoft/yii2": "~2.0",
         "overtrue/wechat": "^3.3"
